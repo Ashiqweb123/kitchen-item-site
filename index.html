@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer-Sale</title>
+  <!-- link-daisy-UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- link-daisy-UI -->
+</head>
+
+<body>
+  <header>
+    <!-- banner-section -->
+    <div class="hero min-h-screen bg-orange-200">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img src="images/Summer 1.png" class="max-w-sm rounded-lg shadow-2xl" />
+        <div>
+          <h1 class="text-5xl font-bold">--Sales-fever--</h1>
+          <p class="py-6">Purchase 200 tk and take <span class="font-bold text-red-400">20% OFF</span></p>
+          <p class="text-3xl">USE PROMO CODE</p>
+          <button class="btn btn-primary">SELL 200</button>
+        </div>
+      </div>
+    </div>
+    <!-- banner-section -->
+  </header>
+  <main>
+    <!-- card-section -->
+    <!-- main-conatiner -->
+ 
+      <!-- shape-conatiner -->
+      <h1 class="text-4xl">
+        Kitchenware
+      </h1>
+      <div class="flex flex-col lg:flex-row">
+       
+        <!-- shape-container -->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4" id="product">
+            <!-- first-card -->
+            <div class="card  bg-base-100 shadow-xl" id="product-1" onclick="handleclick(this)" >
+                <figure><img src="images/prod1.png"
+                        alt="product-1" /></figure>
+                <div class="card-body">
+                    <h2 id="product-one-name" class="card-title">Spoon</h2>
+                    <p></p>
+                </div>
+                <div>
+                  <p id="product-one-price" class="mx -3">price 150 $</p> 
+                </div> 
+            </div> 
+            <!-- Second-card -->
+            <div class="card  bg-base-100 shadow-xl" id="product-2"onclick="handleclick(this)">
+                <figure><img src="images/prod2.png"
+                        alt="product-1" /></figure>
+                <div class="card-body">
+                    <h2 id="product-two-name"class="card-title">Cutter</h2>
+                    <p></p>
+                 
+                </div>
+                <div><p>price: <span id="product-2-price">300</p> </div>
+            </div> 
+            <!-- third-card -->
+            <div class="card  bg-base-100 shadow-xl" id="product-3"onclick='handleclick(this)'>
+                <figure><img src="images/prod3.png"
+                        alt="product-1" /></figure>
+                <div class="card-body">
+                    <h2 id="product-three-name" class="card-title">rice cooker</h2>
+                    <p></p>
+                 
+                </div>
+                <div>  <p>price: <span id="product-3-price">1100</p>  </div>
+            </div> 
+            <!-- forth-card -->
+            <div class="card  bg-base-100 shadow-xl" id="product-4">
+                <figure><img src="images/prod4.png"
+                        alt="product-4" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Product-4</h2>
+                    <p></p>
+                   
+                    <p>price: <span id="product-4-price">70</p>  
+                </div>
+            </div> 
+            <!-- fifth-card -->
+            <div class="card  bg-base-100 shadow-xl" id="product-5">
+                <figure><img src="images/prod5.png"
+                        alt="product-1" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Product-5</h2>
+                    <p></p>
+                   
+                    <p>price: <span id="product-5-price">100</p>  
+                </div>
+            </div> 
+            <!-- sixth-card -->
+            <div class="card  bg-base-100 shadow-xl" id="product-6">
+                <figure><img src="images/prod6.png"
+                        alt="product-1" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Product-6</h2>
+                    <p></p>
+                   
+                    <p>price: <span id="product-6-price">50</p>  
+                </div>
+            </div> 
+     
+         
+           
+        </div>
+        <div class="w-[400px]">
+            <h2 class="text-3xl text-center">Have Coupon??</h2>
+            <div>
+              <input id="discount-field" type="text" placeholder="Apply Coupon" class="input input-bordered " />
+              <button onclick="discount()" id="discount-btn" class="btn btn-secondary">Apply</button>
+            </div>
+            <div id="product-list" class="product-list">
+              
+            </div>
+            <div id="cart-price">
+              Total Price: $<span id="total-price">0</span>
+            </div>
+            <div id="discount">
+             Discount Price: $<span id="discount-price">0</span>
+            </div>
+        </div>
+    </div>
+      <!-- shape-conatiner -->
+    
+    <!-- main-conatiner -->
+    <!-- card-section -->
+  </main>
+  <footer>
+
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
